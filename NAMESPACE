@@ -1,4 +1,11 @@
 import(igraph)
 import(Matrix)
 import(scatterplot3d)
+
+importFrom("graphics", "plot", "stripchart")
+importFrom("stats", "lm", "median", "optimize", "runif")
+
 export(adapreg.m, adapreg, diffuse, diffusionKmeans, distortionMin,epsilonCompute,nystrom, plot.dmap,print.dmap)
+
+S3method(plot, dmap)
+S3method(print, dmap)

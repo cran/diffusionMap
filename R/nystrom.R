@@ -5,7 +5,7 @@ nystrom <- function(dmap,Dnew,sigma=dmap$epsilon){
 
   if(Nold != dim(dmap$X)[1]){
     print("dimensions don't match")
-    break
+    return
   }
 
   Xnew = exp(-Dnew^2/(sigma))
